@@ -120,7 +120,7 @@ toast("Sorry, please connect through email!");
   const handleResumeDownload = () => {
     // In a real implementation, this would be a link to an actual file
     // For demo purposes, we're showing an alert
-    alert('Resume download started! (Demo functionality)');
+   
 
     // In a real application, you would use something like:
     // window.open('/path-to-your-resume.pdf', '_blank');
@@ -301,13 +301,14 @@ toast("Sorry, please connect through email!");
             >
               View Projects
             </button>
+            <a href="/pdf/Resume.pdf">
             <button
               onClick={handleResumeDownload}
               className="flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md transition-colors font-medium"
             >
               <Download size={18} className="mr-2" />
               Download Resume
-            </button>
+            </button></a>
             <button
               onClick={() => scrollToSection('contact')}
               className="border border-blue-500 text-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-md transition-colors font-medium"
