@@ -110,9 +110,9 @@ export default function Portfolio() {
   const handleSubmit = () => {
     console.log('Form submitted:', contactForm);
     // In a real application, you would send this data to your backend
-    
-    
-toast("Sorry, please connect through email!");
+
+
+    toast("Sorry, please connect through email!");
     setContactForm({ name: '', email: '', message: '' });
   };
 
@@ -120,7 +120,7 @@ toast("Sorry, please connect through email!");
   const handleResumeDownload = () => {
     // In a real implementation, this would be a link to an actual file
     // For demo purposes, we're showing an alert
-   
+
 
     // In a real application, you would use something like:
     // window.open('/path-to-your-resume.pdf', '_blank');
@@ -132,10 +132,10 @@ toast("Sorry, please connect through email!");
       id: 1,
       title: "GrideSync-Project Management-Collaburation Platform",
       description: "A full-featured project management and collaboration tool inspired by Slack and Jira, developed using Clean Architecture. It offers real-time chat, notifications, channels for team communication, and a Kanban board for task tracking. The architecture enforces separation of concerns with clear domain, application, infrastructure, and presentation layers—making the system scalable, maintainable, and easy to test.",
-      tech: ["MongoDB", "Typescript", "Express","Node-mailer", "React", "Node.js", "Redux", "Stripe", "Socket.io", "Jwt", "Clean-Architeture"],
-      github: "https://github.com/yourusername/ecommerce-app",
+      tech: ["MongoDB", "Typescript", "Express", "Node-mailer", "React", "Node.js", "Redux", "Stripe", "Socket.io", "Jwt", "Clean-Architeture"],
+      github: "https://github.com/afsalabdurahman/SyncBoard",
       live: "https://aesthetic-torrone-aa4b8f.netlify.app/",
-      youtube: "https://youtu.be/FNXuEPsCn-s?si=4jhqdY5q-gvL2zFi",
+      youtube: "https://youtu.be/7qcakgSDgrQ?si=qKmMBoyB19FuYaAW",
       image: "/image/Gridesync.JPG",
       status: "Working-Progress"
     },
@@ -207,10 +207,10 @@ toast("Sorry, please connect through email!");
 
     },
     {
-       id: 5,
+      id: 5,
       title: "Static-web",
       description: "A static website for interior designers to showcase their projects.",
-      tech: ["React", "CSS Grid","Google-form"],
+      tech: ["React", "CSS Grid", "Google-form"],
       github: "https://github.com/afsalabdurahman/lattice-interior",
       live: "https://afsalabdurahman.github.io/lattice-interior/",
       icon: "🎨"
@@ -218,13 +218,13 @@ toast("Sorry, please connect through email!");
     },
 
     {
-       id: 6,
+      id: 6,
       title: "Profile-Maker",
       description: "A simple profile Management system",
       tech: ["React", "Tailwind CSS",],
       github: "https://github.com/afsalabdurahman/UserProfileManagement",
       icon: "🧑",
-      youtube:"https://youtu.be/fHhy72cqjFA?si=5URIel2ppNv8sGH5"
+      youtube: "https://youtu.be/fHhy72cqjFA?si=5URIel2ppNv8sGH5"
     }
 
   ];
@@ -257,7 +257,7 @@ toast("Sorry, please connect through email!");
               </button>
             ))}
           </div>
-<ToastContainer />
+          <ToastContainer />
           {/* Mobile Navigation Toggle */}
           <button
             className="md:hidden text-gray-300 hover:text-white"
@@ -302,13 +302,13 @@ toast("Sorry, please connect through email!");
               View Projects
             </button>
             <a href="/pdf/Resume.pdf">
-            <button
-              onClick={handleResumeDownload}
-              className="flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md transition-colors font-medium"
-            >
-              <Download size={18} className="mr-2" />
-              Download Resume
-            </button></a>
+              <button
+                onClick={handleResumeDownload}
+                className="flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md transition-colors font-medium"
+              >
+                <Download size={18} className="mr-2" />
+                Download Resume
+              </button></a>
             <button
               onClick={() => scrollToSection('contact')}
               className="border border-blue-500 text-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-md transition-colors font-medium"
@@ -347,14 +347,14 @@ toast("Sorry, please connect through email!");
                 <h4 className="text-xl font-semibold mb-4 text-blue-400">My Skills</h4>
                 <div className="flex flex-wrap gap-3">
                   {["MongoDB", "Express", "React", "Node.js", "JavaScript", "TypeScript", "Redux", "Tailwind CSS", "Git", "RESTful APIs", "GraphQL"
-,"Clean-Architeture","Git","Postman","Figma","Prompt-Engineering"].map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-blue-500/20 text-blue-300 px-4 py-2 rounded-md"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                    , "Clean-Architeture", "Git", "Postman", "Figma", "Prompt-Engineering"].map((skill, index) => (
+                      <span
+                        key={index}
+                        className="bg-blue-500/20 text-blue-300 px-4 py-2 rounded-md"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                 </div>
               </div>
               <div className="flex space-x-4 mb-6">
