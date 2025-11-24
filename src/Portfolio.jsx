@@ -130,10 +130,12 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "GrideSync-Project Management-Collaburation Platform",
-      description: "A full-featured project management and collaboration tool inspired by Slack and Jira, developed using Clean Architecture. It offers real-time chat, notifications, channels for team communication, and a Kanban board for task tracking. The architecture enforces separation of concerns with clear domain, application, infrastructure, and presentation layers—making the system scalable, maintainable, and easy to test.",
-      tech: ["MongoDB", "Typescript", "Express", "Node-mailer", "React", "Node.js", "Redux", "Stripe", "Socket.io", "Jwt", "Clean-Architeture"],
-      github: "https://github.com/afsalabdurahman/SyncBoard",
+      title: "GridSync – AI-Enhanced Project Management & Collaboration Tool",
+      description: "GridSync is a full-featured, AI-enhanced project management and collaboration platform inspired by Slack and Jira, built using Clean Architecture for high scalability and maintainability. It provides real-time chat, live notifications, channel-based team communication, and a Kanban board for streamlined task tracking"+
+
+"The system integrates advanced AI capabilities, including semantic search and RAG-based knowledge retrieval using MongoDB Vector Search, @xenova/transformers for local embeddings, and Groq API for context-aware project documentation queries. Clean Architecture patterns ensure clear separation between domain, application, infrastructure, and presentation layers, making the platform modular, testable, and production-ready",
+      tech: ["MongoDB", "Typescript", "Express","MongodbVector", "Node-mailer", "React", "Node.js", "Redux", "Stripe", "Socket.io", "Jwt", "Clean-Architeture"],
+      github: "https://github.com/afsalabdurahman/SyncBoard/tree/feature",
       live: "https://aesthetic-torrone-aa4b8f.netlify.app/",
       youtube: "https://youtu.be/7qcakgSDgrQ?si=qKmMBoyB19FuYaAW",
       image: "/image/Gridesync.JPG",
@@ -143,7 +145,7 @@ export default function Portfolio() {
       id: 2,
       title: "Lux-ous-Ecommerce Website",
       description: "A feature-rich e-commerce website developed with MVC architecture, offering a seamless shopping experience for users and robust control for admins. The user side includes Google authentication, shopping cart, Razorpay integration, a built-in wallet, and other essential features. The admin side provides tools for cart management, user control, and downloadable sales reports, ensuring efficient store operations and analytics.",
-      tech: ["MongoDB", "Express", "React", "Node.js", , "Chart.js", "Google-Auth", "Razorpay", "MVC-Architeture"],
+      tech: ["MongoDB", "Express", "React", "Node.js",  "Chart.js", "Google-Auth", "Razorpay", "MVC-Architeture"],
       github: "https://github.com/afsalabdurahman/Nodejs-Ecommerce",
       live: "https://your-social-dashboard.com",
       youtube: "https://youtu.be/4kcLcJ0JsCo?si=g2RbDZcjy7NX6bWo",
