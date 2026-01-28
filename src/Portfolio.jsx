@@ -184,7 +184,7 @@ export default function Portfolio() {
       id: 2,
       title: "Flight Booking App",
       description: "Simple Flight Booking App – Step-by-Step Guide to Purchasing a Ticket",
-      tech: ["React", "Local Storage", , "Tailwind CSS",],
+      tech: ["React", "Local Storage",  "Tailwind CSS",],
       github: "https://github.com/afsalabdurahman/testing-Flightbooking-app",
       live: "https://testing-flightbooking-app.vercel.app/",
       icon: "✈️"
