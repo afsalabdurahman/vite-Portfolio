@@ -136,10 +136,10 @@ export default function Portfolio() {
 "The system integrates advanced AI capabilities, including semantic search and RAG-based knowledge retrieval using MongoDB Vector Search, @xenova/transformers for local embeddings, and Groq API for context-aware project documentation queries. Clean Architecture patterns ensure clear separation between domain, application, infrastructure, and presentation layers, making the platform modular, testable, and production-ready",
       tech: ["MongoDB", "Typescript", "Express","MongodbVector", "Node-mailer", "React", "Node.js", "Redux", "Stripe", "Socket.io", "Jwt", "Clean-Architeture"],
       github: "https://github.com/afsalabdurahman/SyncBoard/tree/feature",
-      live: "https://aesthetic-torrone-aa4b8f.netlify.app/",
+      live: "https://developmentsyncboard-afsals-projects-22e24fc7.vercel.app",
       youtube: "https://youtu.be/7qcakgSDgrQ?si=qKmMBoyB19FuYaAW",
       image: "/image/Gridesync.JPG",
-      status: "Working-Progress"
+      
     },
     {
       id: 2,
@@ -150,17 +150,38 @@ export default function Portfolio() {
       live: "https://your-social-dashboard.com",
       youtube: "https://youtu.be/4kcLcJ0JsCo?si=g2RbDZcjy7NX6bWo",
       image: "/image/screencapture-localhost-3000-2025-03-07-11_27_39.png"
-    }
+    },
+    {
+  id: 3,
+  title: "QuickLearn – Instant AI Chrome Extension",
+  description:
+    "Built an AI-powered Chrome Extension that helps users instantly understand technical concepts without leaving their current webpage. Users can press Ctrl+Shift+K to open a draggable popup, type any technical term, and receive a plain-English explanation in seconds. Solved complex browser-extension challenges like Content Security Policy restrictions on platforms such as ChatGPT and Notion by moving API calls to a background service worker. Implemented Shadow DOM for CSS isolation and integrated Gemini API for fast AI-powered explanations.",
+    
+  tech: [
+    "JavaScript",
+    "Chrome Extension",
+    "Manifest V3",
+    "Gemini API",
+    "Shadow DOM",
+    "Service Worker"
+  ],
+
+  github: "https://github.com/afsalabdurahman/QuickLearn-Instant-AI-Explainer",
+  youtube: "https://www.linkedin.com/posts/afsal-abdurahman-452720193_mern-ai-machinelearning-activity-7452627762974040065-oLdv",
+  image: "/image/learn.png"
+}
+
   ];
 
   // Navigation links
-  const navLinks = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" }
-  ];
-
+ const navLinks = [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "achievements", label: "Achievements" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" }
+];
   // Smooth scroll to section
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
@@ -230,7 +251,31 @@ export default function Portfolio() {
     }
 
   ];
-
+const achievements = [
+  {
+    title: "Google Foobar Challenge Invitation",
+    description:
+      "Invited to Google's exclusive Foobar coding challenge for problem-solving and algorithmic excellence.",
+    link:
+      "https://www.linkedin.com/posts/afsal-abdurahman-452720193_googlefoober-excitingopportunity-linkedincommunity-activity-7091773633001373696-IQuK",
+    icon: "🚀"
+  },
+  {
+    title: "Wipro Commendation Award",
+    description:
+      "Recognized for outstanding performance, operational efficiency, and SLA adherence while supporting Finacle banking systems.",
+    link:
+      "https://www.linkedin.com/posts/afsal-abdurahman-452720193_i-value-the-insights-and-guidance-you-provide-activity-7029436348134551552-m6i1",
+    icon: "🏆"
+  },
+  {
+    title: "Generative AI Certification",
+    description:
+      "Completed LinkedIn Learning certification on Generative AI fundamentals.",
+      link:"https://www.linkedin.com/posts/afsal-abdurahman-452720193_certificate-of-completion-activity-7168123866874044416-ynRr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC19qH4BtrfwLp2B2zlK3YhWKbxr6TrUJSo",
+    icon: "🤖"
+  }
+];
   //
   return (
     <div className="bg-slate-900 text-white min-h-screen font-sans">
@@ -339,7 +384,7 @@ export default function Portfolio() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">Full Stack Web Developer</h3>
+              <h3 className="text-2xl font-bold mb-4">Full Stack Developer specializing in scalable backend systems and AI-powered products</h3>
               <p className="text-gray-300 mb-6">
                 I'm a passionate MERN stack developer with expertise in building modern, responsive,
                 and scalable web applications. With a strong foundation in both frontend and backend
@@ -348,7 +393,7 @@ export default function Portfolio() {
               <div className="mb-8">
                 <h4 className="text-xl font-semibold mb-4 text-blue-400">My Skills</h4>
                 <div className="flex flex-wrap gap-3">
-                  {["MongoDB", "Express", "React", "Node.js", "JavaScript", "TypeScript", "Redux", "Tailwind CSS", "Git", "RESTful APIs", "GraphQL"
+                  {["MongoDB", "Express", "React", "Node.js", "JavaScript", "TypeScript", "Redux", "Tailwind CSS", , "RESTful APIs", "GraphQL"
                     , "Clean-Architeture", "Git", "Postman", "Figma", "Prompt-Engineering"].map((skill, index) => (
                       <span
                         key={index}
@@ -381,6 +426,99 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+{/* Experience Section */}
+<section id="experience" className="py-20 px-6">
+  <div className="container mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center">
+      Work <span className="text-blue-500">Experience</span>
+    </h2>
+
+    <div className="max-w-4xl mx-auto bg-slate-800/70 rounded-xl p-8 shadow-lg border border-slate-700">
+      
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+        <div>
+          <h3 className="text-2xl font-bold text-white">
+            L1 Application Support Engineer
+          </h3>
+          <p className="text-blue-400 font-medium">
+            Wipro Limited | Finacle Core Banking System
+          </p>
+        </div>
+
+        <span className="text-gray-400 mt-2 md:mt-0">
+          Dec 2019 – Dec 2023
+        </span>
+      </div>
+
+      <p className="text-gray-300 mb-6">
+        Worked in enterprise banking application support ensuring high availability,
+        incident resolution, and SLA compliance for critical banking systems.
+        This role strengthened my debugging, production issue handling, and
+        system reliability skills — which now helps me build scalable full-stack applications.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-4">
+        {[
+          "Monitored Finacle banking applications and ensured high uptime",
+          "Resolved ServiceNow incident tickets within SLA timelines",
+          "Troubleshot login, transaction, and performance issues",
+          "Performed root cause analysis using logs and alerts",
+          "Managed EOD/BOD batch operations",
+          "Worked with Dev, DBA & Infrastructure teams",
+          "Handled user access management",
+          "Received Wipro commendation certificate"
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-slate-700 px-4 py-3 rounded-lg text-gray-300"
+          >
+            ✅ {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+{/* Achivements */}
+<section id="achievements" className="py-20 px-6 bg-slate-800/30">
+  <div className="container mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Achievements & <span className="text-blue-500">Recognition</span>
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      {achievements.map((item, index) => (
+        <div
+          key={index}
+          className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-all"
+        >
+          <div className="text-4xl mb-4">{item.icon}</div>
+
+          <h3 className="text-xl font-bold mb-3">
+            {item.title}
+          </h3>
+
+          <p className="text-gray-300 mb-4">
+            {item.description}
+          </p>
+
+          {item.link && (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300"
+            >
+              View Proof →
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6">
