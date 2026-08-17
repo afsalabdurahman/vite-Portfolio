@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Linkedin, Mail, Menu, X, ArrowDown, Download } from 'lucide-react';
 import * as THREE from 'three';
 import { ToastContainer, toast } from 'react-toastify';
-
+import AiOsAssistantShowcase from './experiential/Aiosautomation'
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -169,6 +169,25 @@ export default function Portfolio() {
   github: "https://github.com/afsalabdurahman/QuickLearn-Instant-AI-Explainer",
   youtube: "https://www.linkedin.com/posts/afsal-abdurahman-452720193_mern-ai-machinelearning-activity-7452627762974040065-oLdv",
   image: "/image/learn.png"
+},
+{
+  id: 4,
+  emoji: "🎙️",
+  title: "Electrolarynx Voice Restoration AI",
+  subtitle: "AI-Powered Speech Restoration",
+  description:
+    "Restores robotic Electrolarynx speech into a more natural voice using Faster-Whisper, Edge-TTS, and Seed-VC. Fully local, privacy-focused, and powered entirely by open-source AI models.",
+  tech: [
+    "Python",
+    "FastAPI",
+    "React",
+    "React Native",
+    "PyTorch",
+    "Faster-Whisper",
+    "Seed-VC"
+  ],
+  github: "https://github.com/afsalabdurahman/electrolarynx-voice-restore-engine",
+  linkedIn: "https://www.linkedin.com/in/your-linkedin-post-url"
 }
 
   ];
@@ -518,6 +537,15 @@ const achievements = [
   </div>
 </section>
 
+{/* Experiment project */}
+<section id="experimentprojects" className="py-20 px-6">
+   <div className="container mx-auto">
+     <h2 className="text-4xl font-bold mb-12 text-center">
+            Experiment <span className="text-blue-500">Projects</span>
+          </h2>
+  <AiOsAssistantShowcase/>
+  </div>
+</section>
 
 
       {/* Projects Section */}
